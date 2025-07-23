@@ -30,6 +30,7 @@
     "less-loader": "12.3.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
+    "better-mock": "^0.3.7",
     "rimraf": "4.3.0",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
@@ -37,7 +38,9 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "prop-types": "^15.8.1",
-    "openinula": "^0.1.1"
+    "axios": "^1.8.2",
+    "inula-request": "^1.1.9",
+    "openinula": "^0.1.14",
+    "prop-types": "^15.8.1"
   }
 }

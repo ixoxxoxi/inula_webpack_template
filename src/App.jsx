@@ -1,7 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Button from './components/Button';
 import Modal from './components/Modal';
+import { fetchUserInfo } from '@/api/user';
 import '@/assets/style.less';
+import './mock';
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -16,6 +18,13 @@ function App() {
   let del = () => {
     console.log('del...');
   };
+
+  useEffect(() => {
+    fetchUserInfo()
+      .then(res => console.log(res))
+      .catch(error => console.error(error));
+  }, []);
+
   return (
     <>
       <div>
