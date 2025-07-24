@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Button from './components/Button';
 import Modal from './components/Modal';
-import { fetchUserInfo } from '@/api/user';
+import { fetchUserInfo, fetchRankData, editRankData } from '@/api/user';
 import '@/assets/style.less';
 import './mock';
 
@@ -20,7 +20,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetchUserInfo()
+    fetchRankData(1)
       .then(res => console.log(res))
       .catch(error => console.error(error));
   }, []);
