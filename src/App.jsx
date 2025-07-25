@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Button from './components/Button';
 import Modal from './components/Modal';
 import { fetchUserInfo, fetchRankData, editRankData } from '@/api/user';
+import { useCommonStore } from './store';
 import '@/assets/style.less';
 import './mock';
 
@@ -11,6 +12,7 @@ function App() {
   const [open3, setOpen3] = useState(false);
   const [open4, setOpen4] = useState(false);
   const [open5, setOpen5] = useState(false);
+  const commonStore = useCommonStore();
 
   let submit = () => {
     console.log('submit...');
@@ -125,6 +127,13 @@ function App() {
           <>This is a confirm message!</>
         </Modal>
       </div>
+      <br />
+      <Button type="primary" onClick={() => commonStore.add(1)}>
+        +1
+      </Button>
+      <div>{commonStore.num}</div>
+      <div>{commonStore.double}</div>
+      <br />
     </>
   );
 }
