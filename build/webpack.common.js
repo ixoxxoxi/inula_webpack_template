@@ -1,6 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { ProgressPlugin } = require('webpack');
+const { ProgressPlugin, DefinePlugin } = require('webpack');
 
 module.exports = {
   entry: {
@@ -21,6 +21,11 @@ module.exports = {
       title: 'Horizon Project',
     }),
     new ProgressPlugin(),
+    new DefinePlugin({
+      'process.env': {
+        mock: JSON.stringify(!!process.env.mock),
+      },
+    }),
   ],
   module: {
     rules: [

@@ -4,7 +4,6 @@ import Modal from './components/Modal';
 import { fetchUserInfo, fetchRankData, editRankData } from '@/api/user';
 import { useCommonStore } from './store';
 import '@/assets/style.less';
-import './mock';
 
 function App() {
   const [open, setOpen] = useState(false);
