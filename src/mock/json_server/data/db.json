@@ -1,0 +1,64 @@
+{
+  "rank": [
+    {
+      "id": 1,
+      "region": "甘孜藏族自治州",
+      "ydtvalue": "18%",
+      "yoyvalue": "11%"
+    },
+    {
+      "id": 2,
+      "region": "曲靖市",
+      "ydtvalue": "0%",
+      "yoyvalue": "88%"
+    },
+    {
+      "id": 3,
+      "region": "宝鸡市",
+      "ydtvalue": "31%",
+      "yoyvalue": "86%"
+    },
+    {
+      "id": 4,
+      "region": "东营市",
+      "ydtvalue": "78%",
+      "yoyvalue": "74%"
+    },
+    {
+      "id": 5,
+      "region": "白山市",
+      "ydtvalue": "46%",
+      "yoyvalue": "58%"
+    },
+    {
+      "id": 6,
+      "region": "铜仁市",
+      "ydtvalue": "61%",
+      "yoyvalue": "73%"
+    },
+    {
+      "id": 7,
+      "region": "兴安盟",
+      "ydtvalue": "47%",
+      "yoyvalue": "68%"
+    },
+    {
+      "id": 8,
+      "region": "威海市",
+      "ydtvalue": "59%",
+      "yoyvalue": "21%"
+    },
+    {
+      "id": 9,
+      "region": "辽源市",
+      "ydtvalue": "30%",
+      "yoyvalue": "42%"
+    },
+    {
+      "id": 10,
+      "region": "西宁市",
+      "ydtvalue": "57%",
+      "yoyvalue": "95%"
+    }
+  ]
+}

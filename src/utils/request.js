@@ -1,12 +1,13 @@
 import axios from 'inula-request';
 // import axios from 'axios';
 
-const baseURL = 'http://localhost:3000';
-const version = '/api/react';
+const baseURL = '';
+const version = '/api/v1';
 
 const service = axios.create({
   baseURL: baseURL + version,
   timeout: 5000,
+  // withCredentials: true,
 });
 
 service.interceptors.request.use(
